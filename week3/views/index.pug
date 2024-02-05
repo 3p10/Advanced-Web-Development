@@ -1,0 +1,19 @@
+extends layout
+
+block content
+  h1= title
+  p My todos
+  label(for="input-name") Your name: 
+  input(type="text", id="input-name")
+  br
+  label(for="input-task") New task: 
+  input(type="text", id="input-task")
+  br
+  button(id="submit-data") Add task
+  p(id="status")
+  label(for="search-name") Search name: 
+  input(type="text", id="search-name")
+  button(id="search") Search
+  p(id="result-text" style="text-decoration: underline")
+  ul(id="tasks" style="display: block")
+  button(id="delete-user" style="display: none") Delete user
